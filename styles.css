@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #2d0053, #d500f9);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 90%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff4081;
+}
+
+.search-bar {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-section {
+    max-width: 50%;
+    text-align: left; /* Align text to the left */
+}
+
+.welcome-section h1 {
+    font-size: 48px;
+    color: #ff4081;
+}
+
+.welcome-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    margin-bottom: 30px;
+    line-height: 1.6;
+    text-align: left; /* Ensure the paragraph text is left-aligned */
+}
+
+
+.social-icons a img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.login-container {
+    max-width: 40%;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.login-container h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.options {
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.options a {
+    color: #ff4081;
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff4081;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #d500f9;
+}
+
+p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+p a {
+    color: #ff4081;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    font-size: 20px;
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ff4081;
+}
+
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and main container styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #2d0053, #d500f9);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main container for layout */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Login form container with animated border */
+.login-container {
+    max-width: 40%;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    overflow: hidden;
+    border: 4px solid transparent;
+    border-image: linear-gradient(45deg, #ff4081, #d500f9, #82ffa1, #00ffff);
+    border-image-slice: 1;
+    animation: border-animation 4s linear infinite;
+}
+
+/* Create animation for the border strip */
+@keyframes border-animation {
+    0% {
+        border-image-source: linear-gradient(45deg, #ff4081, #d500f9, #82ffa1, #00ffff);
+    }
+    50% {
+        border-image-source: linear-gradient(45deg, #00ffff, #82ffa1, #d500f9, #ff4081);
+    }
+    100% {
+        border-image-source: linear-gradient(45deg, #ff4081, #d500f9, #82ffa1, #00ffff);
+    }
+}
+
+/* Form input styles */
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+/* Button styles */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff4081;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #d500f9;
+}

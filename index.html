@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical Login Page</title>
+    <!-- Use Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="main-container">
+        <div class="welcome-section">
+            <h1>Welcome</h1>
+            <h3>To LogicTech Ghana</h3>
+            <p>
+                Your one-stop destination for all your technology needs. 
+                We are committed to providing innovative solutions that empower businesses and 
+                individuals to thrive in the digital world. With our cutting-edge products, 
+                personalized services, and expert advice, we strive to enhance your technological 
+                experience and drive success. 
+                
+                <p>Join us on this journey towards a smarter, 
+                    connected future with LogicTech Ghana.</p>
+            </p>
+            
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="https://www.facebook.com/YourPage" target="_blank" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com/YourProfile" target="_blank" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/YourProfile" target="_blank" class="fab fa-instagram"></a>
+                <a href="https://www.linkedin.com/in/agyapong-albert-yeboah/" target="_blank" class="fab fa-linkedin-in"></a>
+            </div>
+        </div>
+        
+        <div class="login-container">
+            <h2>Log In</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    <span class="show-password" onclick="togglePassword()" id="togglePassword">Show</span>
+                </div>
+                
+
+                <div class="options">
+                    <div>
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Remember Me</label>
+                    </div>
+                    <a href="#">Forget Password</a>
+                </div>
+                <button type="submit">Log In</button>
+            </form>
+            <p>Don't have an account? <a href="#">Sign Up</a></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
